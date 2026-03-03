@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<!-- хз зачем это нужно, но пусть будет (теперь знаю, что оно априори существует и обозначает тип документа, который мы используем, в данном случае HTML5) -->
+<html lang="ru">
+<!-- это для указания языка документа, в данном случае русский -->
+<head>
+    <!-- голова буквально (юзер не видит, но сайт видит) -->
+    <meta charset="utf-8">
+    <!-- кодировка чтоб без кракозябр -->
+    <title>Список дел</title>
+    <!-- название -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ну тут шрифты с того сайта от гугла подключаются-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- я не помню зачем это, мб оно просто тоже часть того что скопировано с сайта, но я не всмотрелась-->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- подключение файла стилей, скопировала из презентации-->
+</head>
+<!-- конец головы -->
+<body>
+    <!-- теперь тело, то что видит юзер -->
+    <h1 class="title">Список дел</h1>
+    <!-- заголовок самый большой -->
+    <div>
+        <!-- контейнер -->
+        <input type="text" class="input-text" placeholder="Новый элемент списка">
+        <!-- type обозначает что это за элемент, а placeholder - это подсказка внутри поля ввода -->
+        <button class="btn1">Создать</button>
+        <!-- кнопочка -->
+        <button class="btn2">Очистить всё</button>
+        <!-- и еще одна кнопочка -->
+    </div>
+    <!-- конец контейнера -->
+    <ol class="list">
+        <li class="item">
+            <input type="checkbox" class="check">
+            Почесать кошку <sub class="date">от 24.08.2023</sub>
+            <button class="btndelete">❌ </button>
+        </li>
+        <li class="item">
+            <input type="checkbox" class="check">
+            Полить картошку <sub class="date">от 04.05.2022</sub>
+            <button class="btndelete">❌ </button>
+        </li>
+        <li class="item">
+            <input type="checkbox" class="check">
+            Сложить в лукошко <sub class="date">от 14.05.2022</sub>
+            <button class="btndelete">❌ </button>
+        </li>
+    </ol>
+    <!-- конец списка -->
+    <hr>
+    <footer>Copyright ©</footer>
+</body>
+<!-- конец тела -->
+</html>

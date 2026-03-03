@@ -1,0 +1,141 @@
+﻿html, body {
+    background: #325050;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+.input-text {
+    flex: 1;
+    padding: 22px;
+    font-size: 22px;
+}
+.btn1,
+.btn2 {
+    font-size: 22px;
+    padding: 0 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn1 {
+    background: #d9d9d9;
+}
+    .btn1:hover {
+        background: #c8c8c8;
+    }
+.btn2 {
+    background: #a52a2a;
+    color: white;
+}
+    .btn2:hover {
+        background: #8d2222;
+    }
+@media (max-width: 900px) {
+    div {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+.list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    font-size: 28px;
+    color: #333;
+    position: relative;
+    transition: 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    .item:nth-child(1) {
+        background: #8f8f8f;
+        color: white;
+    }
+    .item:nth-child(2) {
+        background: #d7d7d7;
+    }
+    .item:nth-child(3) {
+        background: #ffffff;
+    }
+    .item:hover {
+        filter: brightness(0.9);
+    }
+        .item:hover .btndelete {
+            color: black;
+        }
+.check {
+    width: 28px;
+    height: 28px;
+}
+
+    .check:checked + * {
+        text-decoration: line-through;
+        opacity: 0.7;
+    }
+.btndelete {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: #6b6b6b;
+    transition: 0.2s;
+}
+    .btndelete:hover {
+        transform: scale(1.15);
+    }
+.date {
+    display: block;
+    font-size: 16px;
+    color: #e0e0e0;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+footer {
+    margin-top: auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #cccccc;
+    margin: 40px 0 0;
+}
+.empty-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+}
